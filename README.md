@@ -1,2 +1,2 @@
-# cssGame
-Updated: 2/5
+# findTheSquare
+A puzzle game made with HTML and CSS

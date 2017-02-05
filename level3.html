@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Square 3</title>
+    <LINK REL = Stylesheet TYPE ="text/css" HREF ="css\gameStyles.css"></LINK>
+	
+<style>
+
+
+<!--/*
+#square:hover {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	animation: flipUp 2s;
+}
+*/-->
+
+@keyframes shuf1 {
+  0% { transform: rotatex(0deg) translateY(0vh); }
+  100% { transform: rotateX(45deg) translateY(-20vh); }
+}
+
+@keyframes shuf11 {
+  0% { transform: translate(0vw); }
+  20% { transform: translate(-10.25vw,0vw); }
+  40% { transform: translate(-10.25vw,-10.25vw); }
+  60% { transform: translate(-10.25vw,-10.25vw); }
+  80% { transform: translate(-10.25vw,-10.25vw); }
+  100% { transform: translate(-10.25vw,-10.25vw); }
+}
+  
+#squareShuf {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	position:relative;
+
+	
+  transform-style: preserve3d;
+  transition-duration: 0.25s;
+}
+
+#squareShuf:hover {
+	background-color: rgba(94, 121, 255, 1.0);
+	box-shadow: 0px 0px 40px rgba(0, 0, 255, 0.4), 0px 0px 40px 0px rgba(27, 0, 96, 0.1) inset;
+	
+}
+
+#squareShuf:active {
+	background-color: rgba(94, 121, 255, 1.0);
+	box-shadow: 0px 0px 40px rgba(0, 0, 255, 0.4), 0px 0px 40px 0px rgba(27, 0, 96, 0.3) inset;
+
+
+}
+
+#squareShufR {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	position:relative;
+
+	
+  transform-style: preserve3d;
+  transition-duration: 0.25s;
+}
+
+#squareShufR:hover {
+	background-color: rgba(255, 92, 51, 1);
+	box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.4), 0px 0px 40px 0px rgba(0, 0, 0, 0.1) inset;
+	
+}
+
+#squareShufR:active {
+	background-color: rgba(255, 92, 51, 1);
+	box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.4), 0px 0px 40px 0px rgba(0, 0, 0, 0.1) inset;
+
+
+}
+
+
+</style>
+	
+</head>
+
+<body>
+
+<h1 class="title">How far can you go?</h1>
+
+<div id="game">
+
+<!--
+<a href="level4.html">
+<span id="theSquare" style="animation: spin2 4s ease infinite;"></span>
+</a>
+-->
+
+
+<a href="tryagain.html">
+<div id="squareShuf"></div>
+<div id="squareShuf"></div>
+<div id="squareShuf"></div>
+
+<div id="squareShuf"></div>
+<div id="squareShuf"></div>
+<div id="squareShuf"></div>
+<div id="squareShuf"></div>
+
+<div id="squareShuf"></div>
+<div id="squareShuf"></div>
+<div id="squareShuf"></div>
+</a>
+<a href="level4.html">
+<div id="squareShufR" style="animation: shuf11 4s linear forwards;"></div>
+</a>
+
+
+<div id="borderL">
+<span id="borderSquare" style="height: 1.7vw; width: 1.7vw; margin: 0vw 4vw; animation-delay: 1.3s"></span>
+<span id="borderSquare" style="height: 1vw; width: 1vw; margin: 0vw 8vw; animation-delay: 0.1s"></span>
+<span id="borderSquare" style="height: 3vw; width: 3vw; margin: 4vw 7vw; animation-delay: 2s"></span>
+<span id="borderSquare" style="height: 2vw; width: 2vw; margin: 5vw 1vw; animation-delay: 0s"></span>
+<span id="borderSquare" style="height: 6vw; width: 6vw; margin: 3.8vw 3vw; animation-delay: 0.3s"></span>
+<span id="borderSquare" style="height: 4.7vw; width: 4.7vw; margin: 3vw 3vw; animation-delay: 0.8s"></span>
+<span id="borderSquare" style="height: 3.85vw; width: 3.85vw; margin: 6vw 2vw; animation-delay: 3s"></span>
+</div>
+
+<div id="borderR">
+<span id="borderSquare" style="height: 1vw; width: 1vw; margin: 1vw 2vw; animation-delay: 0.1s"></span>
+<span id="borderSquare" style="height: 3vw; width: 3vw; margin: 4vw 1vw; animation-delay: 2s"></span>
+<span id="borderSquare" style="height: 6vw; width: 6vw; margin: 3.8vw 3vw; animation-delay: 0.3s"></span>
+<span id="borderSquare" style="height: 2vw; width: 2vw; margin: 4vw 1vw; animation-delay: 0s"></span>
+<span id="borderSquare" style="height: 4.7vw; width: 4.7vw; margin: 3vw 1.09vw; animation-delay: 0.8s"></span>
+<span id="borderSquare" style="height: 1vw; width: 1vw; margin: 0vw 2.8vw; animation-delay: 0.1s"></span>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
